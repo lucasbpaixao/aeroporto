@@ -20,12 +20,12 @@
 --
 *Metodos:*
 
-+ setId: void
-+ setNome: void
-+ setCnpj: void
-+ getId: Long
-+ getNome: String
-+ getCnpj: String
++ setId(id): void
++ setNome(nome): void
++ setCnpj(cnpj): void
++ getId(): Long
++ getNome(): String
++ getCnpj(): String
 
 </panel_attributes>
     <additional_attributes/>
@@ -35,7 +35,7 @@
     <coordinates>
       <x>380</x>
       <y>70</y>
-      <w>240</w>
+      <w>260</w>
       <h>320</h>
     </coordinates>
     <panel_attributes>*Aviao*
@@ -50,24 +50,24 @@
 --
 *Metodos:*
 
-+ setId: void
-+ setNumeroAviao: void
-+ setModelo: void
-+ setEmpresaAerea: void
-+ setId: Long
-+ setNumeroAviao: String
-+ setModelo: String
-+ setEmpresaAerea: EmpresaAerea
++ setId(id): void
++ setNumeroAviao(numAviao): void
++ setModelo(modelo): void
++ setEmpresaAerea(empAerea): void
++ getId(): Long
++ getNumeroAviao(): String
++ getModelo(): String
++ getEmpresaAerea(): EmpresaAerea
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>670</x>
-      <y>70</y>
-      <w>210</w>
-      <h>260</h>
+      <x>690</x>
+      <y>90</y>
+      <w>240</w>
+      <h>410</h>
     </coordinates>
     <panel_attributes>*Voo*
 --
@@ -78,6 +78,24 @@
 - origem: String
 - destino: String
 - portaoEmbarque: String
+- aviao: Aviao
+
+--
+*Metodos*
+
++ setId(id): void
++ setDataHora(dataHora): void
++ setOrigem(origem): void
++ setDestino(destino): void
++ setPortaoEmbarque(portao): void
++ setAviao(aviao): void
++ getId(): Long
++ getDataHora(): Date
++ getOrigem():String
++ getDestino(): String
++ getPortaoEmbarque(): String
++ getAviao(): Aviao
+
 
 </panel_attributes>
     <additional_attributes/>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>70</y>
+      <w>210</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>*EmpresaAerea*
+--
+*Atributos:*
+
+- id: Long
+- nome: String
+- cnpj: String
+
+--
+*Metodos:*
+
++ setId: void
++ setNome: void
++ setCnpj: void
++ getId: Long
++ getNome: String
++ getCnpj: String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>70</y>
+      <w>240</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>*Aviao*
+--
+*Atributos: *
+
+- id: Long
+- numeroAviao: String
+- modelo: String
+- empresaAerea: EmpresaAerea
+
+--
+*Metodos:*
+
++ setId: void
++ setNumeroAviao: void
++ setModelo: void
++ setEmpresaAerea: void
++ setId: Long
++ setNumeroAviao: String
++ setModelo: String
++ setEmpresaAerea: EmpresaAerea
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>70</y>
+      <w>210</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>*Voo*
+--
+*Atributos: *
+
+- id: Long
+- dataHora: Date
+- origem: String
+- destino: String
+- portaoEmbarque: String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

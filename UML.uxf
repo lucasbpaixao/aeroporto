@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>90</x>
-      <y>70</y>
+      <x>160</x>
+      <y>110</y>
       <w>210</w>
       <h>270</h>
     </coordinates>
@@ -33,8 +33,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
-      <y>70</y>
+      <x>450</x>
+      <y>110</y>
       <w>260</w>
       <h>320</h>
     </coordinates>
@@ -64,10 +64,44 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>690</x>
-      <y>90</y>
-      <w>240</w>
-      <h>410</h>
+      <x>1090</x>
+      <y>110</y>
+      <w>270</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>*Passageiro*
+--
+*Atributos:*
+
+- id: Long
+- nome: String 
+- cpf: Long
+- assento: String
+- voo: Voo
+
+--
+*Metodos:*
+
++ setId(Long id): void
++ setNome(String nome): void
++ setCpf(Long cpf): void
++ setAssento(String assento): void
++ setVoo(Voo voo): void
++ getId(): Long
++ getNome(): String
++ getCpf(): Long
++ getAssento(): String
++ getVoo(): Voo
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>110</y>
+      <w>280</w>
+      <h>510</h>
     </coordinates>
     <panel_attributes>*Voo*
 --
@@ -79,22 +113,28 @@
 - destino: String
 - portaoEmbarque: String
 - aviao: Aviao
+- plaPiloto: String
+- plaCoPiloto: String
 
 --
 *Metodos*
 
-+ setId(id): void
-+ setDataHora(dataHora): void
-+ setOrigem(origem): void
-+ setDestino(destino): void
-+ setPortaoEmbarque(portao): void
-+ setAviao(aviao): void
++ setId(Long id): void
++ setDataHora(Date dataHora): void
++ setOrigem(String origem): void
++ setDestino(String destino): void
++ setPortaoEmbarque(String portao): void
++ setAviao(Aviao aviao): void
++ setPlaPiloto(String piloto): void
++ setPlaCoPiloto(String coPiloto): void
 + getId(): Long
 + getDataHora(): Date
 + getOrigem():String
 + getDestino(): String
 + getPortaoEmbarque(): String
 + getAviao(): Aviao
++ getPlaPiloto(): String
++ getPlaCoPiloto(): String
 
 
 </panel_attributes>
